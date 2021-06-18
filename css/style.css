@@ -53,7 +53,7 @@
         _page-user-lock
 
 */
-@import url("../../../external.html?link=https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&amp;display=swap");
+@import url("../../../external.html?link=https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("../../../external.html?link=https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
 @import url("../../../external.html?link=https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import url("../../../external.html?link=https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
@@ -87,8 +87,8 @@
   --rgba-primary-7: rgba(91, 207, 197, 0.7);
   --rgba-primary-8: rgba(91, 207, 197, 0.8);
   --rgba-primary-9: rgba(91, 207, 197, 0.9);
-  --font-family-base: Roboto, sans-serif;
-  --font-family-title: Roboto, sans-serif;
+  --font-family-base: Ubuntu, sans-serif;
+  --font-family-title: Ubuntu, sans-serif;
   --title: #000; }
 
 .gradient_one {
@@ -258,7 +258,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   --bs-danger: #f72b50;
   --bs-light: #c8c8c8;
   --bs-dark: #6e6e6e;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", Ubuntu, sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)); }
 
@@ -273,8 +273,8 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.875rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #969ba0;
@@ -9269,7 +9269,8 @@ label {
 .waviy span {
   position: relative;
   display: inline-block;
-  font-size: 40px;
+  font-size: 38px;
+  font-weight: 700;
   color: #000;
   text-transform: uppercase;
   animation: waviy 1s infinite;
@@ -9376,10 +9377,11 @@ label {
         padding-right: 0;
         justify-content: center; } }
   .nav-header .brand-title {
-    margin-left: 15px;
-    margin-top: 15px;
+    margin : 0 ;
     max-width: 140px;
-    font-size: 38px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
     color: #000; }
     [data-theme-version="dark"] .nav-header .brand-title {
       background-position: 0 120%; }
