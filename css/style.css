@@ -9372,7 +9372,7 @@ label {
     font-size: 1.125rem;
     color: #fff;
     text-decoration: none;
-    padding-left: 30px;
+    padding-left: 5px;
     padding-right: 30px;
     font-weight: 700; }
     @media only screen and (max-width: 1400px) {
@@ -9531,7 +9531,7 @@ label {
     display: none; }
 
 .header {
-  height: 7.5rem;
+  height: 8rem;
   z-index: 1;
   position: relative;
   padding: 0rem;
@@ -9562,10 +9562,10 @@ label {
       width: 100%; }
   @media only screen and (max-width: 1400px) {
     .header {
-      height: 6.5rem; } }
+      height: 7rem; } }
   @media only screen and (max-width: 1199px) {
     .header {
-      height: 5rem; } }
+      height: 7rem; } }
   @media only screen and (max-width: 767px) {
     .header {
       padding-top: 0; } }
@@ -9673,7 +9673,7 @@ svg.pulse-svg {
   padding-left: 7.5rem; }
   @media only screen and (max-width: 1023px) {
     [data-sidebar-style="mini"] .header {
-      height: 5.5rem; } }
+      height: 7rem; } }
 
 [data-sidebar-style="compact"] .header {
   width: 100%;

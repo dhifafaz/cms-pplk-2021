@@ -40,7 +40,7 @@ function getUrlParams(dParam)
 			navheaderBg: "color_1",
 			sidebarBg: "color_1",
 			sidebarStyle: "full",
-			sidebarPosition: "fixed",
+			sidebarPosition: "full",
 			headerPosition: "fixed",
 			containerLayout: "full",
 		};
