@@ -9535,7 +9535,7 @@ label {
   z-index: 1;
   position: relative;
   padding: 0rem;
-  background: #dadada;
+  background: #fff;
   z-index: 3;
   padding-left: 21.563rem;
   padding-top: 20px;
@@ -12220,10 +12220,9 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 .dlabnav {
   width: 20.5rem;
   padding-bottom: 0;
-  height: calc(100% - 135px);
+  height: 100%;
   position: absolute;
   top: 7.2rem;
-  left: 1.25rem;
   padding-top: 0;
   z-index: 2;
   background-color: var(--sidebar-bg);
@@ -12232,11 +12231,11 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   @media only screen and (max-width: 1400px) {
     .dlabnav {
       top: 6.7rem;
-      height: calc(100% - 125px); } }
+      height: 100%; } }
   @media only screen and (max-width: 1199px) {
     .dlabnav {
       top: 6.2rem;
-      height: calc(100% - 115px); } }
+      height: 100%; } }
   @media only screen and (max-width: 767px) {
     .dlabnav {
       width: 18rem; } }
@@ -13812,7 +13811,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   border-radius: 0 0 1.25rem 0 !important; }
   @media only screen and (max-width: 767px) {
     [data-sidebar-style="overlay"][data-layout="vertical"] .dlabnav {
-      border-radius: 0 1.25rem 1.25rem 0 !important; } }
+      border-radius: 0 !important; } }
 [data-sidebar-style="overlay"][data-layout="vertical"] .nav-header {
   border-radius: 1.25rem; }
 [data-sidebar-style="overlay"][data-layout="vertical"] .menu-toggle .nav-header {
