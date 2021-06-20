@@ -29595,7 +29595,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 :root {
   --primary: #f3c677;
   --secondary: #709fba;
-  --primary-hover: #38bfb3;
+  --primary-hover: #e0a744;
   --primary-dark: #217069;
   --rgba-primary-1: #110f58;
   --rgba-primary-2: rgba(192, 182, 45, 0.2);
