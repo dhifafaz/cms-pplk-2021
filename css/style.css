@@ -69,11 +69,11 @@
 @import url(../vendor/perfect-scrollbar/css/perfect-scrollbar.css);
 @import url(../vendor/metismenu/css/metisMenu.min.css);
 :root {
-  --primary: #5bcfc5;
+  --primary: #f3c677;
   --secondary: #709fba;
   --primary-hover: #38bfb3;
   --primary-dark: #217069;
-  --rgba-primary-1: rgba(91, 207, 197, 0.1);
+  --rgba-primary-1: #110f58;
   --rgba-primary-2: rgba(91, 207, 197, 0.2);
   --rgba-primary-3: rgba(91, 207, 197, 0.3);
   --rgba-primary-4: rgba(91, 207, 197, 0.4);
@@ -8515,10 +8515,10 @@ body {
   height: 100%;
   position: relative;
   max-width: 100%;
-  font-size: 0.875rem; }
+  font-size: 1rem; }
   @media only screen and (max-width: 991px) {
     body {
-      font-size: 0.875rem; } }
+      font-size: 1rem; } }
 
 p {
   line-height: 1.8; }
@@ -9332,19 +9332,17 @@ label {
 
 [data-header-position="fixed"] .nav-header {
   position: fixed;
-  left: 1.25rem; }
+}
   @media only screen and (max-width: 767px) {
     [data-header-position="fixed"] .nav-header {
       left: 0; } }
 
 .nav-header {
-  height: 6.3rem;
+  height: 8rem;
   width: 25rem;
   display: inline-block;
   text-align: left;
   position: absolute;
-  left: 1.25rem;
-  top: 1.25rem;
   background-color: var(--nav-headbg);
   transition: all .2s ease;
   z-index: 5; }
@@ -9361,8 +9359,8 @@ label {
     display: none; }
   @media only screen and (max-width: 1400px) {
     .nav-header {
-      height: 5.5rem;
-      width: 23rem; } }
+      height: 7rem;
+      width: 25rem; } }
   .nav-header .brand-logo {
     display: flex;
     height: 100%;
@@ -9372,7 +9370,7 @@ label {
     font-size: 1.125rem;
     color: #fff;
     text-decoration: none;
-    padding-left: 5px;
+    padding-left: 30px;
     padding-right: 30px;
     font-weight: 700; }
     @media only screen and (max-width: 1400px) {
@@ -9389,7 +9387,7 @@ label {
         padding-right: 0;
         justify-content: center; } }
   .nav-header .brand-title {
-    margin : 0 ;
+    margin-left : 10px ;
     max-width: 140px;
     font-size: 1.5rem;
     font-weight: 700;
@@ -9412,7 +9410,7 @@ label {
 
 @media only screen and (max-width: 1199px) {
   .nav-header {
-    height: 5rem; } }
+    height: 7rem; } }
 @media only screen and (max-width: 1023px) {
   .nav-header {
     width: 5rem; }
@@ -9450,7 +9448,7 @@ label {
   z-index: 999; }
 
 .hamburger .line {
-  background: #000;
+  background: var(--primary);
   display: block;
   height: 3px;
   border-radius: 3px;
@@ -9461,7 +9459,7 @@ label {
   transition: all 0.3s ease-in-out; }
   @media only screen and (max-width: 767px) {
     .hamburger .line {
-      background: #000 !important; } }
+      background: var(--primary) !important; } }
 
 .hamburger .line:nth-child(1) {
   width: 26px; }
@@ -9535,7 +9533,7 @@ label {
   z-index: 1;
   position: relative;
   padding: 0rem;
-  background: #fff;
+  background: #f9f8f8;
   z-index: 3;
   padding-left: 21.563rem;
   transition: all .2s ease; }
@@ -9568,7 +9566,7 @@ label {
   @media only screen and (max-width: 767px) {
     .header {
       padding-top: 0; 
-      height: 5rem; } }
+      height: 7rem; } }
 
 /* pulse in SVG */
 svg.pulse-svg {
@@ -9683,7 +9681,7 @@ svg.pulse-svg {
 
 [data-header-position="fixed"] .header {
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%; }
 [data-header-position="fixed"] .content-body {
   padding-top: 9rem; }
@@ -9695,7 +9693,7 @@ svg.pulse-svg {
       padding-top: 8rem; } }
   @media only screen and (max-width: 767px) {
     [data-header-position="fixed"] .content-body {
-      padding-top: 6rem; } }
+      padding-top: 8rem; } }
 [data-header-position="fixed"] .dlabnav {
   margin-top: 0; }
 
@@ -12225,7 +12223,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   padding-bottom: 0;
   height: 100%;
   position: absolute;
-  top: 7.2rem;
+  top: 8rem;
   padding-top: 0;
   z-index: 2;
   background-color: var(--sidebar-bg);
@@ -12233,11 +12231,11 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.02); }
   @media only screen and (max-width: 1400px) {
     .dlabnav {
-      top: 6.7rem;
+      top: 7rem;
       height: 100%; } }
   @media only screen and (max-width: 1199px) {
     .dlabnav {
-      top: 6.2rem;
+      top: 7rem;
       height: 100%; } }
   @media only screen and (max-width: 767px) {
     .dlabnav {
@@ -12300,19 +12298,19 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
             padding: 0;
             color: #969BA0; } }
       .dlabnav .metismenu > li > a {
-        font-weight: 400;
+        font-weight: 600;
         display: inline-block;
         font-size: 18px;
-        color: #9fa4a6; }
+        color: var(--font-color-menu); }
         .dlabnav .metismenu > li > a i {
-          color: #9fa4a6; }
+          color: var(--font-color-menu); }
         .dlabnav .metismenu > li > a svg {
           max-width: 24px;
           max-height: 24px;
           height: 100%;
           margin-right: 5px;
           margin-top: -3px;
-          color: var(--primary); }
+          color: var(--font-color-menu); }
         .dlabnav .metismenu > li > a g [fill] {
           fill: #8088a1; }
       .dlabnav .metismenu > li:hover > a, .dlabnav .metismenu > li:focus > a {
@@ -12321,7 +12319,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
           fill: var(--primary); }
       .dlabnav .metismenu > li.mm-active > a {
         color: var(--primary);
-        font-weight: 400;
+        font-weight: 600;
         box-shadow: none;
         background: var(--rgba-primary-1); }
         .dlabnav .metismenu > li.mm-active > a i {
@@ -12374,7 +12372,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
       display: block;
       padding: 0.625rem 1.875rem;
       outline-width: 0;
-      color: #759791;
+      color: var(--font-color-menu);
       text-decoration: none; }
       @media only screen and (max-width: 767px) {
         .dlabnav .metismenu a {
@@ -12398,7 +12396,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   .dlabnav .header-profile {
     margin-bottom: 25px; }
     .dlabnav .header-profile > a.nav-link {
-      border: 1px solid #f5f5f5;
+      border: 1px solid #f9f8f8;
       padding: 10px 15px !important;
       display: flex;
       align-items: center; }
@@ -12412,7 +12410,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
             padding-left: 10px; } }
         .dlabnav .header-profile > a.nav-link .header-info span {
           font-size: 16px;
-          color: #000;
+          color: #f9f8f8;
           display: block;
           margin-bottom: 5px;
           font-weight: 600; }
@@ -12421,7 +12419,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
         .dlabnav .header-profile > a.nav-link .header-info small, .dlabnav .header-profile > a.nav-link .header-info .small {
           display: block;
           font-size: 12px;
-          color: #89879f;
+          color: #f9f8f8;
           font-weight: 400;
           line-height: 1.2; }
       @media only screen and (max-width: 1400px) {
@@ -12456,7 +12454,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 
 .copyright {
   padding: 0 30px;
-  color: #9fa4a6;
+  color: var(--font-color-menu);
   margin-top: 30px; }
   .copyright p {
     font-size: 12px; }
@@ -12477,7 +12475,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 
   .dlabnav {
     left: 0;
-    top: 5rem; } }
+    top: 7rem; } }
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .dlabnav .metismenu > li.mega-menu > ul.collapse:not(.in),
 [data-sidebar-style="mini"][data-layout="vertical"] .dlabnav .metismenu > li.mega-menu > ul.collapse:not(.in) {
   height: 252px !important; }
@@ -12701,7 +12699,7 @@ The smaller device rules always should write below the bigger device rules
 Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
 */
 [data-sidebar-style="full"][data-layout="vertical"] .dlabnav .metismenu > li {
-  padding: 0 30px; }
+  padding: 0 20px !important; }
   [data-sidebar-style="full"][data-layout="vertical"] .dlabnav .metismenu > li > a {
     font-size: 18px;
     padding: 22px 20px;
@@ -12743,7 +12741,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .header .header-content {
     padding-left: 5rem; }
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .dlabnav {
-  width: 6.5rem;
+  width: 8rem;
   overflow: visible;
   position: absolute; }
   [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .dlabnav .nav-text {
@@ -12781,7 +12779,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
       border-radius: 6px;
       margin-left: 0;
       border: 0;
-      background: #fff; }
+      background: #0c0a3e; }
       [direction="rtl"][data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .dlabnav .metismenu li > ul {
         left: auto;
         right: 5rem; }
@@ -12942,7 +12940,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
       box-shadow: 0px 0px 40px 0px rgba(82, 63, 105, 0.1);
       height: auto !important;
       border-radius: .75rem;
-      background: #fff; }
+      background: #0c0a3e; }
       [direction="rtl"]:not([data-layout="horizontal"])[data-sidebar-style="mini"] .dlabnav .metismenu li > ul {
         left: auto;
         right: 6.25rem;
@@ -13830,7 +13828,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     [data-sidebar-style="overlay"] .dlabnav .metismenu > li > a {
       font-size: 16px;
       padding: 20px 20px;
-      color: #7f7184;
+      color: var(--font-color-menu);
       border-radius: 1rem;
       -webkit-transition: all 0.5s;
       -ms-transition: all 0.5s;
@@ -13897,21 +13895,16 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-sidebar-position="fixed"][data-layout="vertical"] .nav-header {
   position: fixed;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem; }
+}
 [data-sidebar-position="fixed"][data-layout="vertical"] .dlabnav {
   position: fixed;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem; }
+}
   [data-sidebar-position="fixed"][data-layout="vertical"] .dlabnav .dlabnav-scroll {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px; }
 [data-sidebar-position="fixed"][data-layout="vertical"] .menu-toggle .dlabnav {
   position: fixed; }
 
-[data-layout="vertical"] .nav-header {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem; }
 [data-layout="vertical"] .dlabnav {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem; }
@@ -14603,9 +14596,10 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
       opacity: 1; }
 
 :root {
-  --nav-headbg: #fff;
-  --sidebar-bg: #fff;
-  --headerbg: #f6f6f6; }
+  --nav-headbg: #f9f8f8;
+  --sidebar-bg: #0c0a3e;
+  --headerbg: #f9f8f8; 
+  --font-color-menu: #f9f8f8}
 
 [data-nav-headerbg="color_2"] {
   --nav-headbg: #6610f2; }
@@ -29594,13 +29588,14 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="mini"]:not([data-layout="h
 html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout="horizontal"]) .footer {
   padding-right: 9.375rem; }
 
+/* ROOT YANG DIPAKE UNTUK COLOR BASIC */
 :root {
-  --primary: #5bcfc5;
+  --primary: #f3c677;
   --secondary: #709fba;
   --primary-hover: #38bfb3;
   --primary-dark: #217069;
-  --rgba-primary-1: rgba(91, 207, 197, 0.1);
-  --rgba-primary-2: rgba(91, 207, 197, 0.2);
+  --rgba-primary-1: #110f58;
+  --rgba-primary-2: rgba(192, 182, 45, 0.2);
   --rgba-primary-3: rgba(91, 207, 197, 0.3);
   --rgba-primary-4: rgba(91, 207, 197, 0.4);
   --rgba-primary-5: rgba(91, 207, 197, 0.5);
