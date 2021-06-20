@@ -20399,14 +20399,14 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   height: 350px; }
 
 .form-control {
-  margin-top: 0gpx;
+  margin-top: 0px;
   background: #fff;
   border: 1px solid #011627;
   padding: 5px 10px;
   color: #6e6e6e;
-  height: 45px;
+  height: 37px;
   border-radius: 1rem; 
-  font-size: 1.4rem}
+  font-size: 1.3rem}
   @media only screen and (max-width: 1400px) {
     .form-control {
       height: 37px; } }
@@ -30068,4 +30068,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 .content-title{
   margin: 10px 0 20px 0;
   font-weight: 700 !important;
+}
+.custom-txt-area{
+  height: 160px;
 }
