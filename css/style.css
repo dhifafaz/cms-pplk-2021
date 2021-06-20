@@ -9693,7 +9693,7 @@ svg.pulse-svg {
       padding-top: 8rem; } }
   @media only screen and (max-width: 767px) {
     [data-header-position="fixed"] .content-body {
-      padding-top: 6rem; } }
+      padding-top: 8rem; } }
 [data-header-position="fixed"] .dlabnav {
   margin-top: 0; }
 
@@ -12699,7 +12699,7 @@ The smaller device rules always should write below the bigger device rules
 Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
 */
 [data-sidebar-style="full"][data-layout="vertical"] .dlabnav .metismenu > li {
-  padding: 0 30px !important; }
+  padding: 0 20px !important; }
   [data-sidebar-style="full"][data-layout="vertical"] .dlabnav .metismenu > li > a {
     font-size: 18px;
     padding: 22px 20px;
