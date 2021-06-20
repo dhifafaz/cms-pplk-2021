@@ -9339,7 +9339,7 @@ label {
 
 .nav-header {
   height: 6.3rem;
-  width: 20.5rem;
+  width: 25rem;
   display: inline-block;
   text-align: left;
   position: absolute;
@@ -9362,7 +9362,7 @@ label {
   @media only screen and (max-width: 1400px) {
     .nav-header {
       height: 5.5rem;
-      width: 17rem; } }
+      width: 23rem; } }
   .nav-header .brand-logo {
     display: flex;
     height: 100%;
@@ -9377,7 +9377,7 @@ label {
     font-weight: 700; }
     @media only screen and (max-width: 1400px) {
       .nav-header .brand-logo {
-        padding-left: 20px;
+        padding-left: 0px;
         padding-right: 20px; } }
     [data-sidebar-style="compact"] .nav-header .brand-logo, [data-sidebar-style="mini"] .nav-header .brand-logo {
       padding-left: 0;
@@ -9423,7 +9423,7 @@ label {
   position: absolute;
   right: 1.75rem;
   text-align: center;
-  top: 55%;
+  top: 45%;
   transform: translateY(-50%);
   z-index: 9999;
   font-size: 1.4rem;
@@ -9538,17 +9538,16 @@ label {
   background: #fff;
   z-index: 3;
   padding-left: 21.563rem;
-  padding-top: 20px;
   transition: all .2s ease; }
   .header .header-content {
     height: 100%;
-    padding-left: 3rem;
+    padding-left: 5rem;
     padding-right: 1.875rem;
     align-items: center;
     display: flex; }
     @media only screen and (max-width: 1400px) {
       .header .header-content {
-        padding-left: 2rem; } }
+        padding-left: 8rem; } }
     @media only screen and (max-width: 767px) {
       .header .header-content {
         padding-left: 3.75rem;
@@ -9568,7 +9567,8 @@ label {
       height: 7rem; } }
   @media only screen and (max-width: 767px) {
     .header {
-      padding-top: 0; } }
+      padding-top: 0; 
+      height: 5rem; } }
 
 /* pulse in SVG */
 svg.pulse-svg {
@@ -12056,12 +12056,12 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   top: 0.625rem; }
 
 .content-body {
-  margin-left: 21.563rem;
+  margin-left: 26.563rem;
   z-index: 0;
   transition: all .2s ease; }
   @media only screen and (max-width: 1400px) {
     .content-body {
-      margin-left: 18.2rem; } }
+      margin-left: 26.563rem; } }
 
 .bell img {
   -webkit-animation: ring 8s .7s ease-in-out infinite;
@@ -12218,7 +12218,7 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
   100% {
     transform: rotate(0); } }
 .dlabnav {
-  width: 20.5rem;
+  width: 25rem;
   padding-bottom: 0;
   height: 100%;
   position: absolute;
@@ -12238,13 +12238,13 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
       height: 100%; } }
   @media only screen and (max-width: 767px) {
     .dlabnav {
-      width: 18rem; } }
+      width: 25rem; } }
   .dlabnav .dlabnav-scroll {
     position: relative;
     height: 100%; }
   @media only screen and (max-width: 1400px) {
     .dlabnav {
-      width: 17rem; } }
+      width: 25rem; } }
   .dlabnav ul {
     padding: 0;
     margin: 0;
