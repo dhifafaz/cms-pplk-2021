@@ -9176,7 +9176,8 @@ a {
   border-radius: 1.75rem !important; }
 
 label {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem; 
+  font-size: 16px !important}
 
 @keyframes gXGDoR {
   from {
@@ -12703,7 +12704,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   [data-sidebar-style="full"][data-layout="vertical"] .dlabnav .metismenu > li > a {
     font-size: 18px;
     padding: 22px 20px;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     -webkit-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s; }
@@ -12798,7 +12799,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .dlabnav .metismenu > li > a {
       padding: 20px 18px;
       text-align: center;
-      border-radius: 3rem; }
+      border-radius: 1rem; }
       [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .dlabnav .metismenu > li > a.has-arrow:after {
         display: none; }
     [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .dlabnav .metismenu > li.mm-active > a {
@@ -12834,7 +12835,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .dlabnav .metismenu .nav-badge {
     display: none; }
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .content-body {
-  margin-left: 7.5rem; }
+  margin-left: 9rem; }
   [direction="rtl"][data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .content-body {
     margin-right: 5.7rem;
     margin-left: auto;
@@ -20398,15 +20399,17 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   height: 350px; }
 
 .form-control {
+  margin-top: 0px;
   background: #fff;
-  border: 1px solid #f5f5f5;
-  padding: 5px 20px;
+  border: 1px solid #011627;
+  padding: 5px 10px;
   color: #6e6e6e;
-  height: 56px;
-  border-radius: 1rem; }
+  height: 37px;
+  border-radius: 1rem; 
+  font-size: 1rem}
   @media only screen and (max-width: 1400px) {
     .form-control {
-      height: 41px; } }
+      height: 37px; } }
   .form-control:hover, .form-control:focus, .form-control.active {
     box-shadow: none;
     background: #fff;
@@ -22733,13 +22736,13 @@ button {
   padding: 0.938rem 1.5rem;
   border-radius: 1.125rem;
   font-weight: 400;
-  font-size: 1rem; }
+  font-size: 1.3rem; }
   .btn:hover, .btn:focus, .btn:active, .btn.active {
     outline: 0 !important; }
   @media only screen and (max-width: 1400px) {
     .btn {
       padding: 0.625rem 1rem;
-      font-size: 0.813rem; } }
+      font-size: 1.3rem; } }
   .btn.btn-success, .btn.btn-secondary, .btn.btn-warning, .btn.btn-primary, .btn.btn-danger, .btn.btn-info {
     color: #fff; }
   .btn-transparent {
@@ -30057,3 +30060,15 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
       color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Custom CSS Abhinaksa */
+.form-wrapper{
+  padding: 10px 30px 30px 30px;
+}
+.content-title{
+  margin: 10px 0 20px 0;
+  font-weight: 700 !important;
+}
+.custom-txt-area{
+  height: 160px;
+}
