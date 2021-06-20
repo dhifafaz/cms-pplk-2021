@@ -9693,7 +9693,7 @@ svg.pulse-svg {
       padding-top: 8rem; } }
   @media only screen and (max-width: 767px) {
     [data-header-position="fixed"] .content-body {
-      padding-top: 6rem; } }
+      padding-top: 8rem; } }
 [data-header-position="fixed"] .dlabnav {
   margin-top: 0; }
 
