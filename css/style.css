@@ -30072,7 +30072,12 @@ html[dir="rtl"] [direction="rtl"][data-sidebar-style="compact"]:not([data-layout
 .custom-txt-area{
   height: 160px;
 }
-
+.prestasi {
+  height: 90px;
+}
+.misi {
+  height: 90px;
+}
 h6{
   color: #f9f8f8;
 }
