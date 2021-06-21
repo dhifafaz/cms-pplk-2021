@@ -22068,8 +22068,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border: 2px solid #e0a744;
   border-top: none;
   box-shadow: 0 15px 20px 0 rgba(230, 211, 107, 0.15);
-  border-bottom-left-radius: 1.75rem;
-  border-bottom-right-radius: 1.75rem; }
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem; }
 .accordion-item {
   margin-bottom: 1.25rem; }
 .accordion-header {
@@ -22079,7 +22079,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   position: relative;
   color: #333;
   font-weight: 400;
-  border-radius: 1.75rem;
+  border-radius: 1rem;
   -webkit-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s; }
