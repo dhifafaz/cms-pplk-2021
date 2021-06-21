@@ -304,61 +304,75 @@
 			<!-- Sidebar -->
 			<!--Content  -->
 			<div class="content-body">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title">Basic Information</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="basic-form">
-                            <form>
-                                <div class="row">
-                                    <div class="mb-3 col-md-6">
-                                        <label class="form-label">Nama Ketua</label>
-                                        <input type="text" class="form-control" placeholder="bang dhifaf">
-                                    </div>
-                                    <div class="mb-3 col-md-6">
-                                        <label>Visi-Misi</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                 
-                                <div class="accordion accordion-danger-solid" id="accordion-two">
-                                    <div class="accordion-item">
-                                      <div class="accordion-header rounded-lg collapsed" id="accord-2One" data-bs-toggle="collapse" data-bs-target="#collapse2One" aria-controls="collapse2One" aria-expanded="false" role="button">
-                                        <span class="accordion-header-text">Sosial Media</span>
-                                        <span class="accordion-header-indicator"></span>
-                                      </div>
-                                      <div id="collapse2One" class="accordion__body collapse" aria-labelledby="accord-2One" data-bs-parent="#accordion-two" style="">
-                                        <div class="accordion-body-text">
-                                            <div class="row">
-                                                <div class="mb-3 col-md-6">
-                                                    <label class="form-label">Instagram</label>
-                                                    <input type="text" class="form-control" placeholder="@dipaptt">
-                                                </div>
-                                                <div class="mb-3 col-md-6">
-                                                    <label class="form-label">Youtube</label>
-                                                    <input type="text" class="form-control" placeholder="youtu.be/dipap">
-                                                </div>
-                                                <div class="mb-3 col-md-6">
-                                                    <label class="form-label">Website</label>
-                                                    <input type="text" class="form-control" placeholder="www.dipap.tt">
-                                                </div>
-                                            </div>
+				<div class="col-xl-12 col-lg-12 form-wrapper">
+					<h1 class="content-title">Masukkan Data Senat</h1>
+					<div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Senat</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="basic-form">
+                                <form>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Nama Ketua</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="Nama Lengkap" name="namaLengkap">
                                         </div>
-                                      </div>
                                     </div>
-                                  </div>
-                                  <div class="card-footer d-sm-flex justify-content-between align-items-center">
-                                    <div class="card-footer-link mb-4 mb-sm-0">
-                                        <p class="card-text text-dark d-inline">Last updated 3 mins ago</p>
+									<div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Visi</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="Visi" name="visi">
+                                        </div>
                                     </div>
-    
-                                    <button type="submit" class="btn btn-primary">Simpan</button>
-                                </div>
-                            </form>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Misi</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control custom-txt-area misi" placeholder="Misi" name="misi"></textarea>
+                                        </div>
+                                    </div>
+									<div class="accordion accordion-danger-solid" id="accordion-two">
+										<div class="accordion-item">
+										  <div class="accordion-header rounded-lg collapsed" id="accord-2One" data-bs-toggle="collapse" data-bs-target="#collapse2One" aria-controls="collapse2One" aria-expanded="false" role="button">
+											<span class="accordion-header-text">Sosial Media</span>
+											<span class="accordion-header-indicator"></span>
+										  </div>
+										  <div id="collapse2One" class="accordion__body collapse" aria-labelledby="accord-2One" data-bs-parent="#accordion-two" >
+											<div class="accordion-body-text">
+												<div class="mb-3 row">
+													<label class="col-sm-3 col-form-label">Website</label>
+													<div class="col-sm-9">
+														<input type="text" class="form-control" placeholder="Website" name="website">
+													</div>
+												</div>
+												<div class="mb-3 row">
+													<label class="col-sm-3 col-form-label">Instagram</label>
+													<div class="col-sm-9">
+														<input type="text" class="form-control" placeholder="Instagram" name="instagram">
+													</div>
+												</div>
+												<div class="mb-3 row">
+													<label class="col-sm-3 col-form-label">Youtube</label>
+													<div class="col-sm-9">
+														<input type="text" class="form-control" placeholder="Youtube" name="youtube">
+													</div>
+												</div>
+												</div>
+											</div>
+										  </div>
+										</div>
+									  </div>
+                                    <div class="mb-3 row">
+                                        <div class="col-sm-9">
+                                            <button type="submit" class="btn btn-primary">Simpan</button>
+                                            <button type="button" class="btn btn-outline-primary ">Edit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
+				</div>
 			</div>
 			<!--Content  -->
 		</div>

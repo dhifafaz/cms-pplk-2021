@@ -272,7 +272,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #969ba0;
+  color: #000;
   background-color: #dadada;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -22046,27 +22046,28 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     color: #211c37;
     box-shadow: none; }
 .accordion-danger-solid .accordion-header {
-  background: #f72b50;
-  border-color: #f72b50;
-  color: #fff;
-  box-shadow: 0 -10px 20px 0 rgba(247, 43, 80, 0.15);
+  background: #e0a744;
+  border-color: #e0a744;
+  color: #000;
+  font-size: 1.3rem;
+  box-shadow: 0 -10px 20px 0 rgba(230, 211, 107, 0.15);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0; }
   .accordion-danger-solid .accordion-header.collapsed {
-    background: #fee6ea;
-    border-color: #fee6ea;
-    color: #211c37;
+    background: #f3c677;
+    border-color: #f3c677;
+    color: #000;
+    font-size: 1.3rem;
     box-shadow: none;
-    border-bottom-left-radius: 1.75rem;
-    border-bottom-right-radius: 1.75rem; }
+    border-radius: 1rem; }
     [data-theme-version="dark"] .accordion-danger-solid .accordion-header.collapsed {
       background: rgba(247, 43, 80, 0.15);
       border-color: rgba(247, 43, 80, 0.15);
       color: #969ba0; }
 .accordion-danger-solid .accordion__body {
-  border: 2px solid #f72b50;
+  border: 2px solid #e0a744;
   border-top: none;
-  box-shadow: 0 15px 20px 0 rgba(247, 43, 80, 0.15);
+  box-shadow: 0 15px 20px 0 rgba(230, 211, 107, 0.15);
   border-bottom-left-radius: 1.75rem;
   border-bottom-right-radius: 1.75rem; }
 .accordion-item {
@@ -22744,7 +22745,7 @@ button {
       padding: 0.625rem 1rem;
       font-size: 1.3rem; } }
   .btn.btn-success, .btn.btn-secondary, .btn.btn-warning, .btn.btn-primary, .btn.btn-danger, .btn.btn-info {
-    color: #fff; }
+    color: #000; }
   .btn-transparent {
     background-color: transparent; }
 
