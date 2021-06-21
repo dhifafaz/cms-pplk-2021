@@ -22069,7 +22069,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-top: none;
   box-shadow: 0 15px 20px 0 rgba(230, 211, 107, 0.15);
   border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem; }
+  border-bottom-right-radius: 1.75rem; }
 .accordion-item {
   margin-bottom: 1.25rem; }
 .accordion-header {
