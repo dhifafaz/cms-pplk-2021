@@ -333,96 +333,76 @@
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Ketua Umum</label>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <input type="text" class="form-control" placeholder="Nama lengkap" name="namaLengkap">
-                                                </div>
-                                                <div class="col-sm-6 mt-2 mt-sm-0">
-                                                    <input type="text" class="form-control" placeholder="Prodi'Tahun Angkatan" name="">
-                                                </div>
-                                             </div>
+											<div class="col-sm-9">
+												<input type="text" class="form-control" placeholder="Nama lengkap" name="ketuaUmum">
+											</div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Tahun Berdiri</label>
                                         <div class="col-sm-9">
-                                            <input type="date" class="form-control">
+                                            <input type="date" class="form-control" name="tahunBerdiri">
                                         </div>
                                     </div>
                                     </div>
                                     <div class="mb-3 row">
-                                        <label class="col-sm-3 col-form-label">Visi Misi</label>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <input type="text" class="form-control" placeholder="Visi">
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <input type="text" class="form-control" placeholder="Misi">
-                                                </div>
-                                            </div>
+                                        <label class="col-sm-3 col-form-label">Visi</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="Visi" name="visi">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Misi</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control custom-txt-area misi" placeholder="Misi" name="misi"></textarea>
+                                        </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Logo</label>
                                         <div class="col-sm-9">
-                                            <input type="file" accept="image/*" class="form-control">
+                                            <input type="file" accept="image/*" class="form-control" name="logo">
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Filosofi Logo</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="Filosofi Logo">
+                                            <input type="text" class="form-control" placeholder="Filosofi Logo" name="filosofiLogo">
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Website</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="Website">
+                                            <input type="text" class="form-control" placeholder="Website" name="website">
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Instagram</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="Instagram">
+                                            <input type="text" class="form-control" placeholder="Instagram" name="instagram">
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Youtube</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="Youtube">
+                                            <input type="text" class="form-control" placeholder="Youtube" name="instagram">
+                                        </div>
+                                    </div>
+									<div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Barcode</label>
+                                        <div class="col-sm-9">
+                                            <input type="file" accept="image/*" class="form-control" name="barcode">
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Prestasi</label>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <input type="text" class="form-control" placeholder="Nama Prestasi">
-                                                </div>
-                                                <div class="col-sm-6 mt-2 mt-sm-0">
-                                                    <input type="text" class="form-control" placeholder="Tahun Kegiatan">
-                                                </div>
-                                             </div>
+                                        <div class="col-sm-9 ">
+											<textarea class="form-control custom-txt-area prestasi" placeholder="Prestasi" name="prestasi" ></textarea>
+                                        </div>
                                     </div>
-                                    <div class="mb-3 row">
-                                        <label class="col-sm-3 col-form-label">Galeri</label>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <label class="me-sm-2">Foto Kegiatan</label>
-                                                    <input type="file" accept="image/*" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <label class="me-sm-2">Nama Kegiatan</label>
-                                                    <input type="text" class="form-control" placeholder="Nama Kegiatan">
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <label class="me-sm-2">Tanggal Kegiatan</label>
-                                                    <input type="date" class="form-control">
-                                                </div>
-                                            </div>
+									<div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Deskripsi</label>
+                                        <div class="col-sm-9 ">
+											<textarea class="form-control custom-txt-area" placeholder="Deskripsi" name="artikel"></textarea>
+                                        </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <div class="col-sm-9">
