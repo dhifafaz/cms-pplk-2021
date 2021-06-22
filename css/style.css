@@ -9346,6 +9346,7 @@ label {
   position: absolute;
   background-color: var(--nav-headbg);
   transition: all .2s ease;
+  padding-left: 20px ;
   z-index: 5; }
   .nav-header .logo-abbr {
     max-width: 47px; }
@@ -23453,7 +23454,7 @@ button {
 
 .card {
   margin-bottom: 1.875rem;
-  background-color: #fff;
+  background-color: #f9f8f8;
   transition: all .5s ease-in-out;
   position: relative;
   border: 0px solid transparent;
@@ -25648,7 +25649,7 @@ table.dataTable tfoot th {
         line-height: 50px; } }
     .dataTables_wrapper .dataTables_paginate span .paginate_button.current, .dataTables_wrapper .dataTables_paginate span .paginate_button:hover {
       color: var(--primary) !important;
-      background: #fff;
+      background: #f9f8f8;
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); }
       .dataTables_wrapper .dataTables_paginate span .paginate_button.current:hover, .dataTables_wrapper .dataTables_paginate span .paginate_button:hover:hover {
         color: #fff !important;
