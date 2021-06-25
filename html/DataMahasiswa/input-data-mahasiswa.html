@@ -327,7 +327,7 @@
 									<div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Role</label>
                                         <div class="col-sm-9">
-                                            <select class="default-select form-control wide" name="role" id="role" disabled>
+                                            <select class="form-control wide" name="role" id="roles" disabled>
                                                 <option value="" >Admin</option>
                                                 <option value="" >Daplok</option>
                                                 <option value="" >Mentor</option>
@@ -338,6 +338,30 @@
                                                 <option value="" >Pendanaan</option>
                                                 <option value="" >Maba</option>
                                             </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">NIM</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="NIM" name="nim" value=$nim id="nim" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Kelompok</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="Kelompok" name="kelompok" value=$kelompok id="kelompok" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Instagram</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="Instagram" name="instagram" value=$instagram id="instagram" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label">Prodi</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="Prodi" name="prodi" value=$prodi id="prodi" disabled>
                                         </div>
                                     </div>
 									</div>
@@ -374,13 +398,21 @@
                 document.getElementById('nama').disabled = true;
                 document.getElementById('email').disabled = true;
                 document.getElementById('password').disabled = true;
-                document.getElementById('role').disabled = true;
+                document.getElementById('roles').disabled = true;
+                document.getElementById('nim').disabled = true;
+                document.getElementById('kelompok').disabled = true;
+                document.getElementById('instagram').disabled = true;
+                document.getElementById('prodi').disabled = true;
                 }
             function editData() {   
                 document.getElementById('nama').disabled = false;
                 document.getElementById('email').disabled = false;
                 document.getElementById('password').disabled = false;
-                document.getElementById('role').disabled = false;
+                document.getElementById('roles').disabled = false;
+                document.getElementById('nim').disabled = false;
+                document.getElementById('kelompok').disabled = false;
+                document.getElementById('instagram').disabled = false;
+                document.getElementById('prodi').disabled = false;
             }
         </script>
 	</body>

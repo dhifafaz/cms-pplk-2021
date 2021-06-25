@@ -311,55 +311,43 @@
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Nama Kabinet</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="Nama" name="nama">
+                                            <input type="text" class="form-control" placeholder="Nama" name="nama" id="nama" value=$nama disabled>
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Presiden</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="Presiden" name="presiden">
+                                            <input type="text" class="form-control" placeholder="Presiden" name="presiden" id="presiden" value=$presiden disabled>
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Sekretaris Jenderal</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="Sekretaris Jenderal" name="sekjen">
-                                        </div>
-                                    </div>
-									<div class="mb-3 row">
-                                        <label class="col-sm-3 col-form-label">Visi</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="Visi" name="visi">
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label class="col-sm-3 col-form-label">Misi</label>
-                                        <div class="col-sm-9">
-                                            <textarea class="form-control custom-txt-area misi" placeholder="Misi" name="misi"></textarea>
+                                            <input type="text" class="form-control" placeholder="Sekretaris Jenderal" name="sekjen" id="sekjen" value=$sekjen disabled>
                                         </div>
                                     </div>
 									<div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Organigram</label>
                                         <div class="col-sm-9">
-                                            <input type="file" accept="image/*" class="form-control" placeholder="" name="organigram" multiple="multiple">
+                                            <input type="file" accept="image/*" class="form-control" placeholder="" name="organigram" multiple="multiple" id="organigram" value=$organigram disabled>
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Logo</label>
                                         <div class="col-sm-9">
-                                            <input type="file" accept="image/*" class="form-control" placeholder="" name="logo">
+                                            <input type="file" accept="image/*" class="form-control" placeholder="" name="logo" id="logo" value=$logo disabled>
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Filosofi Logo</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="Filosofi Logo" name="filosofiLogo">
+                                            <input type="text" class="form-control" placeholder="Filosofi Logo" name="filosofiLogo" id="filosofiLogo" value=$filosofiLogo disabled>
                                         </div>
                                     </div>                                    
 									<div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Deskripsi</label>
                                         <div class="col-sm-9 ">
-											<textarea class="form-control custom-txt-area" placeholder="Deskripsi" name="artikel"></textarea>
+											<textarea class="form-control custom-txt-area" placeholder="Deskripsi" name="deskripsi" id="deskripsi" value=$deskripsi disabled></textarea>
                                         </div>
                                     </div>
 									<div class="accordion accordion-danger-solid" id="accordion-two">
@@ -373,19 +361,19 @@
 												<div class="mb-3 row">
 													<label class="col-sm-3 col-form-label">Website</label>
 													<div class="col-sm-9">
-														<input type="text" class="form-control" placeholder="Website" name="website">
+														<input type="text" class="form-control" placeholder="Website" name="website" id="website" value=$website disabled>
 													</div>
 												</div>
 												<div class="mb-3 row">
 													<label class="col-sm-3 col-form-label">Instagram</label>
 													<div class="col-sm-9">
-														<input type="text" class="form-control" placeholder="Instagram" name="instagram">
+														<input type="text" class="form-control" placeholder="Instagram" name="instagram" id="instagram" value=$instagram disabled>
 													</div>
 												</div>
 												<div class="mb-3 row">
 													<label class="col-sm-3 col-form-label">Youtube</label>
 													<div class="col-sm-9">
-														<input type="text" class="form-control" placeholder="Youtube" name="youtube">
+														<input type="text" class="form-control" placeholder="Youtube" name="youtube" id="youtube" value=$youtube disabled>
 													</div>
 												</div>
 												</div>
@@ -395,8 +383,8 @@
 									</div>
                                     <div class="mb-3 row">
                                         <div class="col-sm-9">
-                                            <button type="submit" class="btn btn-primary ">Simpan</button>
-                                            <button type="button" class="btn btn-outline-primary ">Edit</button>
+                                            <button type="submit" class="btn btn-primary " onclick="saveData()">Simpan</button>
+                                            <button type="button" class="btn btn-outline-primary " onclick="editData()">Edit</button>
                                         </div>
                                     </div>
                                 </form>
@@ -421,6 +409,32 @@
 		<script src="../../js/custom.min.js"></script>
 		<script src="../../js/dlabnav-init.js"></script>
 		<script src="../../js/demo.js"></script>
-
+		
+		<script>
+            function saveData() {   
+                document.getElementById('nama').disabled = true;
+                document.getElementById('presiden').disabled = true;
+                document.getElementById('sekjen').disabled = true;
+                document.getElementById('organigram').disabled = true;
+                document.getElementById('logo').disabled = true;
+                document.getElementById('filosofiLogo').disabled = true;
+                document.getElementById('deskripsi').disabled = true;
+                document.getElementById('website').disabled = true;
+                document.getElementById('instagram').disabled = true;
+                document.getElementById('youtube').disabled = true;
+                }
+            function editData() {   
+                document.getElementById('nama').disabled = false;
+                document.getElementById('presiden').disabled = false;
+                document.getElementById('sekjen').disabled = false;
+                document.getElementById('organigram').disabled = false;
+                document.getElementById('logo').disabled = false;
+                document.getElementById('filosofiLogo').disabled = false;
+                document.getElementById('deskripsi').disabled = false;
+                document.getElementById('website').disabled = false;
+                document.getElementById('instagram').disabled = false;
+                document.getElementById('youtube').disabled = false;
+            }
+        </script>
 	</body>
 </html>

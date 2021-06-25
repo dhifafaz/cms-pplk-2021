@@ -310,14 +310,14 @@
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Fun Fact</label>
                                         <div class="col-sm-9">
-                                            <textarea class="form-control custom-txt-area misi" placeholder="Fun Fact" name="body"></textarea>
+                                            <textarea class="form-control custom-txt-area" placeholder="Fun Fact" name="body" id="body" value=$body disabled></textarea>
                                         </div>
                                     </div>
                                     
                                     <div class="mb-3 row">
                                         <div class="col-sm-9">
-                                            <button type="submit" class="btn btn-primary">Simpan</button>
-                                            <button type="button" class="btn btn-outline-primary ">Edit</button>
+                                            <button type="submit" class="btn btn-primary " onclick="saveData()">Simpan</button>
+                                            <button type="button" class="btn btn-outline-primary " onclick="editData()">Edit</button>
                                         </div>
                                     </div>
                                 </form>
@@ -342,5 +342,13 @@
 		<script src="../../js/dlabnav-init.js"></script>
 		<script src="../../js/demo.js"></script>
 
+		<script>
+            function saveData() {   
+                document.getElementById('body').disabled = true;
+            }
+            function editData() {   
+                document.getElementById('body').disabled = false;
+            }
+        </script>
 	</body>
 </html>

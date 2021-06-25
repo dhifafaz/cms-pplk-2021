@@ -311,37 +311,37 @@
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Nama Rektor</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="Nama Rektor" name="namaRektor">
+                                            <input type="text" class="form-control" placeholder="Nama Rektor" name="namaRektor" id="namaRektor" value=$namaRektor disabled>
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Nama Wakil</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="Nama Wakil" name="namaWakil">
+                                            <input type="text" class="form-control" placeholder="Nama Wakil" name="namaWakil" id="namaWakil" value=$namaWakil disabled>
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Ketua K3</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" placeholder="Ketua K3" name="ketua_k3">
+                                            <input type="text" class="form-control" placeholder="Ketua K3" name="ketuaK3" id="ketuaK3" value=$ketuaK3 disabled>
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Ketua Keuangan</label>
 											<div class="col-sm-9">
-												<input type="text" class="form-control" placeholder="Ketua Keuangan" name="ketua_keuangan">
+												<input type="text" class="form-control" placeholder="Ketua Keuangan" name="ketuaKeuangan" id="ketuaKeuangan" value=$ketuaKeuangan disabled>
 											</div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Ketua Helpdesk</label>
 											<div class="col-sm-9">
-												<input type="text" class="form-control" placeholder="Ketua Helpdesk" name="ketua_helpdesk">
+												<input type="text" class="form-control" placeholder="Ketua Helpdesk" name="ketuaHelpdesk" id="ketuaHelpdesk" value=$ketuaHelpdesk disabled>
 											</div>
                                     </div>
 									<div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label">Alamat</label>
                                         <div class="col-sm-9">
-                                            <textarea class="form-control custom-txt-area alamat" placeholder="Alamat" name="alamat"></textarea>
+                                            <textarea class="form-control custom-txt-area alamat" placeholder="Alamat" name="alamat" id="alamat" value=$alamat disabled></textarea>
                                         </div>
                                     </div>
 
@@ -356,19 +356,19 @@
 												<div class="mb-3 row">
 													<label class="col-sm-3 col-form-label">Website</label>
 													<div class="col-sm-9">
-														<input type="text" class="form-control" placeholder="Website" name="website">
+														<input type="text" class="form-control" placeholder="Website" name="website" id="website" value=$website disabled>
 													</div>
 												</div>
 												<div class="mb-3 row">
 													<label class="col-sm-3 col-form-label">Instagram</label>
 													<div class="col-sm-9">
-														<input type="text" class="form-control" placeholder="Instagram" name="instagram">
+														<input type="text" class="form-control" placeholder="Instagram" name="instagram" id="instagram" value=$instagram disabled>
 													</div>
 												</div>
 												<div class="mb-3 row">
 													<label class="col-sm-3 col-form-label">Youtube</label>
 													<div class="col-sm-9">
-														<input type="text" class="form-control" placeholder="Youtube" name="youtube">
+														<input type="text" class="form-control" placeholder="Youtube" name="youtube" id="youtube" value=$youtube disabled>
 													</div>
 												</div>
 												</div>
@@ -377,8 +377,8 @@
 										</div>
 										<div class="mb-3 row">
 											<div class="col-sm-9">
-												<button type="submit" class="btn btn-primary">Simpan</button>
-												<button type="button" class="btn btn-outline-primary ">Edit</button>
+												<button type="submit" class="btn btn-primary" onclick="saveData()">Simpan</button>
+												<button type="button" class="btn btn-outline-primary " onclick="editData()">Edit</button>
 											</div>
 										</div>
 									</div>
@@ -403,6 +403,29 @@
 		<script src="../../js/custom.min.js"></script>
 		<script src="../../js/dlabnav-init.js"></script>
 		<script src="../../js/demo.js"></script>
-
+		<script>
+            function saveData() {   
+                document.getElementById('namaRektor').disabled = true;
+                document.getElementById('namaWakil').disabled = true;
+                document.getElementById('ketuaK3').disabled = true;
+                document.getElementById('ketuaKeuangan').disabled = true;
+                document.getElementById('ketuaHelpdesk').disabled = true;
+                document.getElementById('alamat').disabled = true;
+                document.getElementById('website').disabled = true;
+                document.getElementById('instagram').disabled = true;
+                document.getElementById('youtube').disabled = true;
+                }
+            function editData() {   
+                document.getElementById('namaRektor').disabled = false;
+                document.getElementById('namaWakil').disabled = false;
+                document.getElementById('ketuaK3').disabled = false;
+                document.getElementById('ketuaKeuangan').disabled = false;
+                document.getElementById('ketuaHelpdesk').disabled = false;
+                document.getElementById('alamat').disabled = false;
+                document.getElementById('website').disabled = false;
+                document.getElementById('instagram').disabled = false;
+                document.getElementById('youtube').disabled = false;
+            }
+        </script>
 	</body>
 </html>
