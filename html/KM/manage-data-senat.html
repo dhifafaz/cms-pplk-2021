@@ -8,6 +8,8 @@
 		<meta property="og:title" content="CMS - PPLK 2021" />
 		<meta property="og:description" content="CMS - PPLK 2021" />
 		<title>CMS - PPLK 2021</title>
+		<!-- Datatable -->
+		<link href="../../vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
 
 		<link rel="shortcut icon" type="image/png" href="../../assets/images/Logopplk-clearbg.png" />
 		<link href="../../vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
@@ -244,11 +246,11 @@
 						<li>
 							<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 								<i class="fa fa-user" aria-hidden="true"></i>
-								<span class="nav-text">Data Mahasiswa</span>
+								<span class="nav-text">Akun Mahasiswa</span>
 							</a>
 							<ul aria-expanded="false">
-								<li><a href="../DataMahasiswa/input-data-mahasiswa.html">Masukkan Data Mahasiswa</a></li>
-								<li><a href="../DataMahasiswa/manage-data-mahasiswa.html">Kelola Data Mahasiswa</a></li>
+								<li><a href="../DataMahasiswa/input-data-mahasiswa.html">Buat Akun Mahasiswa</a></li>
+								<li><a href="../DataMahasiswa/manage-data-mahasiswa.html">Kelola Akun Mahasiswa</a></li>
 							</ul>
 						</li>
 						<li>
@@ -298,46 +300,45 @@
 			<!-- Sidebar -->
 			<!--Content  -->
 			<div class="content-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <img class="card-img-top img-fluid" src="http://suaranasional.com/wp-content/uploads/2015/07/Jokowi-plonga-plongo.jpg" alt="Card image cap">
-                            <div class="card-header">
-                                <h5 class="card-title">Judul Artikel</h5>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">lorem ipsum dolor sit amet
-                                </p>
-                                <p class="card-text">Assalamualaikum, Have we ever met?
-                                </p>
-                            </div>
-                            <div class="card-footer d-sm-flex justify-content-between align-items-center">
-                                <a href="javascript:void(0);" class="card-link">Edit</a>
-                                <a href="javascript:void(0);" class="card-link float-end">Buka</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <div class="card">
-                            <img class="card-img-top img-fluid" src="https://1.bp.blogspot.com/-RRYAYFQGLTk/Xq7iySPMFfI/AAAAAAAEMi0/B_3QuffEbQIY761r35gm1BqOHiz4Ypq0gCLcBGAsYHQ/w600/Sekarang%252C%2BKecerdikan%2BPresiden%2BJokowi%2BDisebut%2BMirip%2BKhalifah%2BAli%2BBin%2BAbi%2BThalib.jpg" alt="Card image cap">
-                            <div class="card-header">
-                                <h5 class="card-title">Judul Artikel</h5>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">lorem ipsum dolor sit amet
-                                </p>
-                                <p class="card-text">Assalamualaikum, Have we ever met?
-                                </p>
-                            </div>
-                            <div class="card-footer d-sm-flex justify-content-between align-items-center">
-                                <a href="javascript:void(0);" class="card-link">Edit</a>
-                                <a href="javascript:void(0);" class="card-link float-end">Buka</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+                <!-- Tabel manage data kabinet -->
+				<div class="col-xl-12 col-lg-12 form-wrapper">
+					<h1 class="content-title">Kelola Data KM - Senat</h1>
+					<div class="card">
+						<div class="card-header">
+							<h4 class="card-title">Senat</h4>
+						</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<table id="example4" class="display" style="min-width: 845px">
+									<thead>
+										<tr>
+											<th>No</th>
+											<th>Nama Ketua</th>
+                                            <th>Deskripsi</th>
+                                            <th>More</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+                                            <td>Nama</td>
+                                            <td>desc</td>
+											<td class="manage-row">
+												<a href="input-data-kabinet.html" class="edit-button">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+												</a>
+												<a href="/delete-data" class="delete-button">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+												</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+                <!-- Tabel manage data kabinet -->
 			</div>
 			<!--Content  -->
 		</div>
@@ -348,7 +349,9 @@
 		<!-- Required vendors -->
 		<script src="../../vendor/global/global.min.js"></script> 
 		<script src="../../vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
-		
+		<!-- Datatable -->
+		<script src="../../vendor/datatables/js/jquery.dataTables.min.js"></script>
+		<script src="../../js/plugins-init/datatables.init.js"></script>
 		<!-- Dashboard 1 -->
 		<script src="../../js/dashboard/dashboard-1.js"></script>
 		<script src="../../js/custom.min.js"></script>

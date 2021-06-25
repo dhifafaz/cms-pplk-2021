@@ -30087,12 +30087,13 @@ h6{
   width: 100px;
   height: 50px;
   margin: 0 auto;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 .edit-button{
   height: 50px;
   width: 50px;
+  padding-top: 5px;
   font-size: 2rem;
   text-align: center;
   color:#0c0a3e;
@@ -30100,6 +30101,7 @@ h6{
 .delete-button{
   height: 50px;
   width: 50px;
+  padding-top: 5px;
   font-size: 2rem;
   text-align: center;
   color: red;
