@@ -30106,7 +30106,9 @@ h6{
   text-align: center;
   color: red;
 }
-
+td{
+  font-weight:400 !important;
+}
 /* Custom shadow buat navbar class:header */
 .header {
   box-shadow: 0 4px 8px -1px rgba(0,0,0,.2);
